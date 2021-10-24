@@ -1,0 +1,32 @@
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+%matplotlib inline
+import matplotlib 
+matplotlib.rcParams["figure.figsize"] = (20,10
+ANIKET ROY16:55
+df1.shape
+df1['area_type'].unique()
+https://github.com/codebasics/py/blob/master/DataScience/BangloreHomePrices/model/banglore_home_prices_final.ipynb
+ANIKET ROY17:07
+import random
+word_pos = random.randint(0, len(words)-1)
+ANIKET ROY17:10
+print(random.choice(l))
+ANIKET ROY17:15
+with open("file_name.csv", 'w') as f:
+    fc = csv.writer(f, lineterminator='\n')
+fc.writerows(new_list)
+df = pd.DataFrame()
+  
+# Creating two columns
+df['State'] = list1[0::2]
+df['Country'] = list1[1::2]
+  
+# Converting to excel
+df.to_excel('result.xlsx', index = False)
+ANIKET ROY17:23
+https://www.geeksforgeeks.org/python-split-given-list-and-insert-in-excel-file/
+ANIKET ROY17:26
+['area_type', 'availability', 'location', 'size', 'society',
+       'total_sqft', 'bath', 'balcony', 'price']

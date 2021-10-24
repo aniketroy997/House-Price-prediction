@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="styleHeader.css">	
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="footerCssFile.css">
+</head>
+<body>
+
+	<header>
+		<div class="overlay">
+		<h1>House Price Prediction</h1>
+		<p>Select the requirment and get the predicted price</p>
+	</header>
+
+	<div class="img"></div>
+	<form class="form">
+	<table class="center">
+		<tr>
+			<td>
+
+					<div>
+						<h2>State</h2>
+					</div>
+					<div>
+						<select class="location" name="" id="uiState" onchange="myValue(this)">
+						<option value="mumbai_columns.json" selected="selected">Mumbai</option>
+							<option value="Delhi_columns.json">Delhi</option>
+							<option value="chennai_columns.json">Chennai</option>
+							<option value="Banglore_columns.json">Banglore</option>
+							<option value="Hyderabad_columns.json">Hyderabad</option>
+							<option value="kolkata_columns.json">Delhi</option>
+						</select>
+					</div>
+			</td>
+			<td>
+					<h2>Resale</h2>
+					<div class="switch-field">
+						<input type="radio" id="radio-bath-1" name="uiResale" value="1"/>
+						<label for="radio-bath-1">No</label>
+						<input type="radio" id="radio-bath-2" name="uiResale" value="2" checked/>
+						<label for="radio-bath-2">Yes</label>
+					</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h2>Area (Square Feet)</h2>
+				<input class="area"  type="text" id="uiArea" class="floatLabel" name="Squareft" value="1000">
+			</td>
+			<td>
+				<h2>No of Bedroom</h2>
+					<div class="switch-field">
+						<input type="radio" id="radio-bhk-1" name="uiNo_of_Bedrooms" value="1"/>
+						<label for="radio-bhk-1">1</label>
+						<input type="radio" id="radio-bhk-2" name="uiNo_of_Bedrooms" value="2" checked/>
+						<label for="radio-bhk-2">2</label>
+						<input type="radio" id="radio-bhk-3" name="uiNo_of_Bedrooms" value="3"/>
+						<label for="radio-bhk-3">3</label>
+						<input type="radio" id="radio-bhk-4" name="uiNo_of_Bedrooms" value="4"/>
+						<label for="radio-bhk-4">4</label>
+						<input type="radio" id="radio-bhk-5" name="uiNo_of_Bedrooms" value="5"/>
+						<label for="radio-bhk-5">5</label>
+					</div>
+			</td>
+		</tr>
+		<tr>
+			<td  colspan="2">
+				<h2>Location</h2>
+				<div>
+					<select class="location" name="" id="uiLocations">
+						<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+						<option>Electronic City</option>
+						<option>Rajaji Nagar</option>
+				</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div>
+					<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+					<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+
+
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</html>
